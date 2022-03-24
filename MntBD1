@@ -1,2 +1,3 @@
+#!/bin/bash
 ls  /dev/ | grep sd | grep -v sda | grep sd.1 > /tmp/grp 
 sudo mount /dev/$(cat /tmp/grp) /mnt
